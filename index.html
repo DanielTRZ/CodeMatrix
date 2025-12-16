@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Academy PRO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="matrix-canvas"></canvas>
+
+    <div id="terminal">
+        <div id="output"></div>
+        <div id="autocomplete"></div> 
+        <input type="text" id="input" autocomplete="off" placeholder="Type command..." class="hidden" />
+    </div>
+
+    <footer id="main-footer">
+        Daniel Trzeciński | <span id="footer-status"></span>
+    </footer>
+
+    <div id="pill-choice" class="hidden">
+        <button id="red-pill">🔴 Red Pill</button>
+        <button id="blue-pill">🔵 Blue Pill</button>
+        
+        <hr style="margin: 15px 0; border-color: #00ff4130;">
+        <div id="quick-lang-switch">
+            <p id="lang-prompt" style="color: #0f0; margin-bottom: 5px;">Change Language:</p>
+            <button data-lang="PL" id="switch-pl">Polski</button>
+            <button data-lang="EN" id="switch-en">English</button>
+        </div>
+    </div>
+
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
